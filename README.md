@@ -37,12 +37,12 @@ The following steps were performed to prepare the data:
 * Creating dummy variables above dramatically increased the number of features in your dataset. Perform dimensionality reduction with PCA. Rather than specify the number of principal components when you instantiate the PCA model, it is possible to state the desired **explained variance**. For example, say that a dataset has 100 features. Using `PCA(n_components=0.99)` creates a model that will preserve approximately 99% of the explained variance, whether that means reducing the dataset to 80 principal components or 3. For this project, preserve 90% of the explained variance in dimensionality reduction. How did the number of the features change?
 
   #### Observation 
-  After applying the PCA Model on the data, the number of columns i.e. features reduced from 98 to 74 to retain the 90% Explained Variance Ratio. 
+  After applying the PCA Model on the data, the number of columns i.e. features reduced from 98 to 74 (dimensionality reduction) to retain the 90% Explained Variance Ratio. 
 
 * Next, further reduce the dataset dimensions with t-SNE and visually inspect the results. In order to accomplish this task, run t-SNE on the principal components: the output of the PCA transformation. Then create a scatter plot of the t-SNE output. Observe whether there are distinct clusters or not.
 
   #### Observation 
-  After reducing the dataset dimensions with t-SNE and plotting the graph there were some clusters observed the following graph was observed:
+  After reducing the dataset dimensions with t-SNE and plotting the graph there were some clusters observed per the following graph:
   
   ![t-SNE Scatter Plot](tSNE_Clusters_Scatter_Plot.png)
 
